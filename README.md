@@ -1,2 +1,2 @@
-# Push-Notifications-Manager
+# Notifications-Manager
 Handling all possible types of  Notifications
