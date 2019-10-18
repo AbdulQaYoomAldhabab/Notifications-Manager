@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "581459249842",
+    "firebase_url": "https://shelatt-ffbdf.firebaseio.com",
+    "project_id": "shelatt-ffbdf",
+    "storage_bucket": "shelatt-ffbdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581459249842:android:f8d8db4081957f903a97ab",
+        "android_client_info": {
+          "package_name": "com.asadeq.nm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581459249842-6htuou30l8u893tpuq4rlll7rliae1pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkMGCHRZ7sfDofXivufDrCBHyBlQhAVyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581459249842-6htuou30l8u893tpuq4rlll7rliae1pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581459249842:android:6ae3cb336afa5398",
+        "android_client_info": {
+          "package_name": "com.shelat.asadeq.shelatt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581459249842-6n13a7euu5gj84gbdrj3h62in375omv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shelat.asadeq.shelatt",
+            "certificate_hash": "f3d8dc44cee452cb8d05dd117b68187ac7657a52"
+          }
+        },
+        {
+          "client_id": "581459249842-6htuou30l8u893tpuq4rlll7rliae1pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkMGCHRZ7sfDofXivufDrCBHyBlQhAVyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581459249842-6htuou30l8u893tpuq4rlll7rliae1pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-2687136206569912~5724425789"
+    }
+  ],
+  "configuration_version": "1"
+}
