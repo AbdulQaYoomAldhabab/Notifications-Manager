@@ -4,68 +4,195 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            android:gravity="center"
-            android:padding="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/notificationGroup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Group Notification"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="217dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:gravity="center"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/notificationDefault"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Default Notification"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="217dp" />
-        <Button
-            android:id="@+id/notificationCollapsed"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Collapsed Notification"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="217dp" />
-        <Button
-            android:id="@+id/notificationExpanded"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Expanded Notification"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="217dp" />
-        <Button
-            android:id="@+id/notificationInbox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Inbox Notification"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="217dp" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/notificationGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Group Notification"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <Button
+                android:id="@+id/Notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Default Notification"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithLandingClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithLandingClass"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithLargeIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithLargeIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithAction"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithLargeIconAndAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="setNotificationWithLargeIconAndAction"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithBodyTextAndActionAndLandingActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithBodyTextAndActionAndLandingActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithLargeIconAndActionAndLandingActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithLargeIconAndActionAndLandingActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithBigPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithBogPicture"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithBigPictureAndActionAndLanding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithBigPictureAndActionAndLanding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithBigPictureAndLandingActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithBigPictureAndLandingActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithBigText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithBigText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithBigTextAndLargeIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithBigTextAndLargeIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithBigTextAndLargeIconAndLandingActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithBigTextAndLargeIconAndLandingActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationInboxWithMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationInboxWithMessage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationInboxWithMessageAndBigContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationInboxWithMessageAndBigContent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationInboxWithMessageAndBigContentAndSummaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationInboxWithMessageAndBigContentAndSummaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithTextAndBigText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithTextAndBigText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithTextAndBigTextAndBigContentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithTextAndBigTextAndBigContentTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+            <Button
+                android:id="@+id/NotificationWithTextAndBigTextAndBigContentTitleSummaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NotificationWithTextAndBigTextAndBigContentTitleSummaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="217dp" />
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

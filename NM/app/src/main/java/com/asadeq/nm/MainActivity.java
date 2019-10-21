@@ -18,17 +18,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private final static String TAG = "MainActivity";
 
     final String messageTitle = "Notification Title";
     final String messageBody = "Notification Body \n NotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotificationNotification";
+    final String bigText = "Notification bigText \n  bigText bigText bigText bigText bigText bigText bigText bigText bigText bigText bigText bigText bigText bigText bigText bigText bigText bigText";
     final String CHANNEL_ID = "MyTestApp";
 
     NotificationsHandler notificationsHandler;
+    private String summaryText = "Notification summaryText \n summaryText summaryText summaryText summaryText summaryText summaryText summaryText";
+
     //Map<String, String> row = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +53,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 });
         findViewById(R.id.notificationGroup).setOnClickListener(this);
-        findViewById(R.id.notificationDefault).setOnClickListener(this);
-        findViewById(R.id.notificationCollapsed).setOnClickListener(this);
-        findViewById(R.id.notificationExpanded).setOnClickListener(this);
-        findViewById(R.id.notificationInbox).setOnClickListener(this);
+        findViewById(R.id.Notification).setOnClickListener(this);
+        findViewById(R.id.NotificationWithLandingClass).setOnClickListener(this);
+        findViewById(R.id.NotificationWithLargeIcon).setOnClickListener(this);
+        findViewById(R.id.NotificationWithAction).setOnClickListener(this);
+        findViewById(R.id.NotificationWithLargeIconAndAction).setOnClickListener(this);
+        findViewById(R.id.NotificationWithBodyTextAndActionAndLandingActivity).setOnClickListener(this);
+        findViewById(R.id.NotificationWithLargeIconAndActionAndLandingActivity).setOnClickListener(this);
+        findViewById(R.id.NotificationWithBigPicture).setOnClickListener(this);
+        findViewById(R.id.NotificationWithBigPictureAndActionAndLanding).setOnClickListener(this);
+        findViewById(R.id.NotificationWithBigPictureAndLandingActivity).setOnClickListener(this);
+        findViewById(R.id.NotificationWithBigText).setOnClickListener(this);
+        findViewById(R.id.NotificationWithBigTextAndLargeIcon).setOnClickListener(this);
+        findViewById(R.id.NotificationWithBigTextAndLargeIconAndLandingActivity).setOnClickListener(this);
+        findViewById(R.id.NotificationInboxWithMessage).setOnClickListener(this);
+        findViewById(R.id.NotificationInboxWithMessageAndBigContent).setOnClickListener(this);
+        findViewById(R.id.NotificationInboxWithMessageAndBigContentAndSummaryText).setOnClickListener(this);
+        findViewById(R.id.NotificationWithTextAndBigText).setOnClickListener(this);
+        findViewById(R.id.NotificationWithTextAndBigTextAndBigContentTitle).setOnClickListener(this);
+        findViewById(R.id.NotificationWithTextAndBigTextAndBigContentTitleSummaryText).setOnClickListener(this);
 
         notificationsHandler = new NotificationsHandler(this);
 
@@ -101,22 +117,89 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //notificationsHandler.showBundleNotification(mCities.size());
 
                 break;
-            case R.id.notificationDefault:
+            case R.id.Notification:
                 notificationsHandler.setNotification(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon);
+                break;
+            case R.id.NotificationWithLandingClass:
+                notificationsHandler.setNotificationWithLandingClass(
                         messageTitle,
                         messageBody,
                         R.drawable.ic_small_icon,
                         SplashActivity.class);
                 break;
-            case R.id.notificationCollapsed:
-                notificationsHandler.setNotification(
+            case R.id.NotificationWithLargeIcon:
+                notificationsHandler.setNotificationWithLargeIcon(
                         messageTitle,
                         messageBody,
                         R.drawable.ic_small_icon,
-                        R.drawable.collapsed_icon);
+                        R.drawable.expanded_big_icon);
                 break;
-            case R.id.notificationExpanded:
-                notificationsHandler.setNotification(
+            case R.id.NotificationWithAction:
+                notificationsHandler.setNotificationWithAction(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        notificationsHandler.getAction(
+                                R.drawable.ic_small_icon
+                                ,"Action"
+                                , SplashActivity.class));
+                break;
+            case R.id.NotificationWithLargeIconAndAction:
+                notificationsHandler.setNotificationWithLargeIcon(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        R.drawable.expanded_big_icon);
+                break;
+            case R.id.NotificationWithBodyTextAndActionAndLandingActivity:
+                notificationsHandler.setNotificationWithBodyTextAndActionAndLandingActivity(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon
+                        ,notificationsHandler.getAction(
+                                R.drawable.ic_small_icon
+                                , "ActionTitle",
+                                SplashActivity.class),
+                        SplashActivity.class);
+                break;
+            case R.id.NotificationWithLargeIconAndActionAndLandingActivity:
+                notificationsHandler.setNotificationWithLargeIconAndActionAndLandingActivity(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        R.drawable.collapsed_icon,
+                        notificationsHandler.getAction(
+                                R.drawable.ic_small_icon
+                                , "ActionTitle",
+                                SplashActivity.class),
+                        SplashActivity.class);
+                break;
+            case R.id.NotificationWithBigPicture:
+                notificationsHandler.setNotificationWithBigPicture(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        R.drawable.collapsed_icon,
+                        R.drawable.amsterdam);
+                break;
+            case R.id.NotificationWithBigPictureAndActionAndLanding:
+                notificationsHandler.setNotificationWithBigPictureAndActionAndLanding(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        R.drawable.collapsed_icon,
+                        R.drawable.amsterdam,
+                        notificationsHandler.getAction(
+                                R.drawable.ic_small_icon
+                                , "ActionTitle",
+                                SplashActivity.class),
+                        SplashActivity.class);
+                break;
+            case R.id.NotificationWithBigPictureAndLandingActivity:
+                notificationsHandler.setNotificationWithBigPictureAndLandingActivity(
                         messageTitle,
                         messageBody,
                         R.drawable.ic_small_icon,
@@ -124,11 +207,72 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         R.drawable.amsterdam,
                         SplashActivity.class);
                 break;
-            case R.id.notificationInbox:
-                notificationsHandler.setNotification(
+            case R.id.NotificationWithBigText:
+                notificationsHandler.setNotificationWithBigText(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        bigText);
+                break;
+            case R.id.NotificationWithBigTextAndLargeIcon:
+                notificationsHandler.setNotificationWithBigTextAndLargeIcon(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        R.drawable.collapsed_icon,
+                        bigText);
+                break;
+            case R.id.NotificationWithBigTextAndLargeIconAndLandingActivity:
+                notificationsHandler.setNotificationWithBigTextAndLargeIconAndLandingActivity(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        R.drawable.collapsed_icon,
+                        bigText,
+                        SplashActivity.class);
+                break;
+            case R.id.NotificationInboxWithMessage:
+                notificationsHandler.setNotificationInboxWithMessage(
                         messageTitle,
                         R.drawable.ic_small_icon,
                         messageBody);
+                break;
+            case R.id.NotificationInboxWithMessageAndBigContent:
+                notificationsHandler.setNotificationInboxWithMessageAndBigContent(
+                        messageTitle,
+                        R.drawable.ic_small_icon,
+                        messageBody,
+                        bigText);
+                break;
+            case R.id.NotificationInboxWithMessageAndBigContentAndSummaryText:
+                notificationsHandler.setNotificationInboxWithMessageAndBigContentAndSummaryText(
+                        messageTitle,
+                        R.drawable.ic_small_icon,
+                        messageBody,
+                        bigText,
+                        summaryText);
+                break;
+            case R.id.NotificationWithTextAndBigText:
+                notificationsHandler.setNotificationWithTextAndBigText(
+                        messageTitle,
+                        R.drawable.ic_small_icon,
+                        bigText);
+                break;
+            case R.id.NotificationWithTextAndBigTextAndBigContentTitle:
+                notificationsHandler.setNotificationWithTextAndBigTextAndBigContentTitle(
+                        messageTitle,
+                        R.drawable.ic_small_icon,
+                        bigText,
+                        messageTitle);
+                break;
+            case R.id.NotificationWithTextAndBigTextAndBigContentTitleSummaryText:
+                notificationsHandler.setNotificationWithTextAndBigTextAndBigContentTitleSummaryText(
+                        messageTitle,
+                        R.drawable.ic_small_icon,
+                        bigText,
+                        messageTitle,
+                        summaryText
+                );
                 break;
         }
     }

@@ -208,8 +208,8 @@ public class NotificationsHandler {
      * @return
      */
     public void setNotification(@NonNull String title,
-                                                @NonNull String bodyText,
-                                                @NonNull int SmallIcon){
+                                @NonNull String bodyText,
+                                @NonNull int SmallIcon){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(bodyText)
@@ -230,7 +230,7 @@ public class NotificationsHandler {
      * @param landingActivityClass
      * @return
      */
-    public void setNotification(@NonNull String title,
+    public void setNotificationWithLandingClass(@NonNull String title,
                                                 @NonNull String bodyText,
                                                 @NonNull int SmallIcon,
                                                 @NonNull Class landingActivityClass){
@@ -255,10 +255,10 @@ public class NotificationsHandler {
      * @param largeIcon
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                                @NonNull String bodyText,
-                                                @NonNull int SmallIcon,
-                                                @NonNull int largeIcon){
+    public void setNotificationWithLargeIcon(@NonNull String title,
+                                             @NonNull String bodyText,
+                                             @NonNull int SmallIcon,
+                                             @NonNull int largeIcon){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(bodyText)
@@ -279,10 +279,10 @@ public class NotificationsHandler {
      * @param action1
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                                @NonNull String bodyText,
-                                                @NonNull int SmallIcon,
-                                                @NonNull NotificationCompat.Action action1){
+    public void setNotificationWithAction(@NonNull String title,
+                                          @NonNull String bodyText,
+                                          @NonNull int SmallIcon,
+                                          @NonNull NotificationCompat.Action action1){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(bodyText)
@@ -304,7 +304,7 @@ public class NotificationsHandler {
      * @param action1
      * @return
      */
-    public void setNotification(@NonNull String title,
+    public void setNotificationWithLargeIconAndAction(@NonNull String title,
                                                 @NonNull String bodyText,
                                                 @NonNull int SmallIcon,
                                                 @NonNull int largeIcon,
@@ -331,11 +331,11 @@ public class NotificationsHandler {
      * @param landingActivityClass
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                                @NonNull String bodyText,
-                                                @NonNull int SmallIcon,
-                                                @NonNull NotificationCompat.Action action1,
-                                                @NonNull Class landingActivityClass){
+    public void setNotificationWithBodyTextAndActionAndLandingActivity(@NonNull String title,
+                                                                             @NonNull String bodyText,
+                                                                             @NonNull int SmallIcon,
+                                                                             @NonNull NotificationCompat.Action action1,
+                                                                             @NonNull Class landingActivityClass){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(bodyText)
@@ -358,12 +358,12 @@ public class NotificationsHandler {
      * @param landingActivityClass
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                                @NonNull String bodyText,
-                                                @NonNull int SmallIcon,
-                                                @NonNull int largeIcon,
-                                                @NonNull NotificationCompat.Action action1,
-                                                @NonNull Class landingActivityClass){
+    public void setNotificationWithLargeIconAndActionAndLandingActivity(@NonNull String title,
+                                                                        @NonNull String bodyText,
+                                                                        @NonNull int SmallIcon,
+                                                                        @NonNull int largeIcon,
+                                                                        @NonNull NotificationCompat.Action action1,
+                                                                        @NonNull Class landingActivityClass){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(bodyText)
@@ -386,11 +386,11 @@ public class NotificationsHandler {
      * @param bigPicture
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                                @NonNull String bodyText,
-                                                @NonNull int SmallIcon,
-                                                @NonNull int largeIcon,
-                                                @NonNull int bigPicture){
+    public void setNotificationWithBigPicture(@NonNull String title,
+                                              @NonNull String bodyText,
+                                              @NonNull int SmallIcon,
+                                              @NonNull int largeIcon,
+                                              @NonNull int bigPicture){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(bodyText)
@@ -414,7 +414,7 @@ public class NotificationsHandler {
      * @param landingActivityClass
      * @return
      */
-    public void setNotification(@NonNull String title,
+    public void setNotificationWithBigPictureAndActionAndLanding(@NonNull String title,
                                                 @NonNull String bodyText,
                                                 @NonNull int SmallIcon,
                                                 @NonNull int largeIcon,
@@ -444,12 +444,12 @@ public class NotificationsHandler {
      * @param landingActivityClass
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                                @NonNull String bodyText,
-                                                @NonNull int SmallIcon,
-                                                @NonNull int largeIcon,
-                                                @NonNull int bigPicture,
-                                                @NonNull Class landingActivityClass){
+    public void setNotificationWithBigPictureAndLandingActivity(@NonNull String title,
+                                                                @NonNull String bodyText,
+                                                                @NonNull int SmallIcon,
+                                                                @NonNull int largeIcon,
+                                                                @NonNull int bigPicture,
+                                                                @NonNull Class landingActivityClass){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(bodyText)
@@ -470,7 +470,7 @@ public class NotificationsHandler {
      * @param bigText
      * @return
      */
-    public void setNotification(@NonNull String title,
+    public void setNotificationWithBigText(@NonNull String title,
                                                 @NonNull String bodyText,
                                                 @NonNull int SmallIcon,
                                                 @NonNull String bigText){
@@ -494,11 +494,11 @@ public class NotificationsHandler {
      * @param bigText
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                                @NonNull String bodyText,
-                                                @NonNull int SmallIcon,
-                                                @NonNull int largeIcon,
-                                                @NonNull String bigText){
+    public void setNotificationWithBigTextAndLargeIcon(@NonNull String title,
+                                                       @NonNull String bodyText,
+                                                       @NonNull int SmallIcon,
+                                                       @NonNull int largeIcon,
+                                                       @NonNull String bigText){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(bodyText)
@@ -508,7 +508,6 @@ public class NotificationsHandler {
                 .setPriority(Notification.PRIORITY_DEFAULT)
                 .setContentIntent(getPendingIntent())
                 .setStyle(getNotificationTextStyle(bigText))
-                .setStyle(getNotificationTextStyle(bigText))
                 .build();
         notify(builder);
     }
@@ -521,12 +520,12 @@ public class NotificationsHandler {
      * @param bigText
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                                @NonNull String bodyText,
-                                                @NonNull int SmallIcon,
-                                                @NonNull int largeIcon,
-                                                @NonNull String bigText,
-                                                @NonNull Class landingActivityClass){
+    public void setNotificationWithBigTextAndLargeIconAndLandingActivity(@NonNull String title,
+                                                                         @NonNull String bodyText,
+                                                                         @NonNull int SmallIcon,
+                                                                         @NonNull int largeIcon,
+                                                                         @NonNull String bigText,
+                                                                         @NonNull Class landingActivityClass){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(bodyText)
@@ -546,7 +545,7 @@ public class NotificationsHandler {
      * @param message
      * @return
      */
-    public void setNotificationInboxBuilder(@NonNull String title,
+    public void setNotificationInboxWithMessage(@NonNull String title,
                                                 @NonNull int SmallIcon,
                                                 @NonNull String message){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
@@ -555,8 +554,8 @@ public class NotificationsHandler {
                 .setGroup(GROUP_KEY)
                 .setGroupSummary(true)
                 .setSmallIcon(SmallIcon)
-                .setPriority(Notification.PRIORITY_DEFAULT)
                 .setContentIntent(getPendingIntent())
+                .setPriority(Notification.PRIORITY_DEFAULT)
                 .setStyle(getNotificationInboxStyle(message))
                 .build();
         notify(builder);
@@ -570,27 +569,27 @@ public class NotificationsHandler {
      * @param bigContent
      * @return
      */
-    public void setNotificationInboxStyle(@NonNull String title,
-                                                @NonNull int SmallIcon,
-                                                @NonNull String message,
-                                                @NonNull String bigContent){
+    public void setNotificationInboxWithMessageAndBigContent(@NonNull String title,
+                                                             @NonNull int SmallIcon,
+                                                             @NonNull String message,
+                                                             @NonNull String bigContent){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setAutoCancel(true)
                 .setGroup(GROUP_KEY)
                 .setGroupSummary(true)
                 .setSmallIcon(SmallIcon)
-                .setPriority(Notification.PRIORITY_DEFAULT)
                 .setContentIntent(getPendingIntent())
+                .setPriority(Notification.PRIORITY_DEFAULT)
                 .setStyle(getNotificationInboxStyle(message, bigContent))
                 .build();
         notify(builder);
     }
-    public void setNotificationInboxStyle(@NonNull String title,
-                                          @NonNull int SmallIcon,
-                                          @NonNull String message,
-                                          @NonNull String bigContent,
-                                          @NonNull String summaryText){
+    public void setNotificationInboxWithMessageAndBigContentAndSummaryText(@NonNull String title,
+                                                                           @NonNull int SmallIcon,
+                                                                           @NonNull String message,
+                                                                           @NonNull String bigContent,
+                                                                           @NonNull String summaryText){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setAutoCancel(true)
@@ -611,9 +610,9 @@ public class NotificationsHandler {
      * @param bigText
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                @NonNull int SmallIcon,
-                                @NonNull String bigText){
+    public void setNotificationWithTextAndBigText(@NonNull String title,
+                                                  @NonNull int SmallIcon,
+                                                  @NonNull String bigText){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setAutoCancel(true)
@@ -635,18 +634,18 @@ public class NotificationsHandler {
      * @param bigContentTitle
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                                @NonNull int SmallIcon,
-                                                @NonNull String bigText,
-                                                @NonNull String bigContentTitle){
+    public void setNotificationWithTextAndBigTextAndBigContentTitle(@NonNull String title,
+                                                                    @NonNull int SmallIcon,
+                                                                    @NonNull String bigText,
+                                                                    @NonNull String bigContentTitle){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setAutoCancel(true)
                 .setGroup(GROUP_KEY)
                 .setGroupSummary(true)
                 .setSmallIcon(SmallIcon)
-                .setPriority(Notification.PRIORITY_DEFAULT)
                 .setContentIntent(getPendingIntent())
+                .setPriority(Notification.PRIORITY_DEFAULT)
                 .setStyle(getNotificationTextStyle(bigText, bigContentTitle))
                 .build();
         notify(builder);
@@ -662,19 +661,19 @@ public class NotificationsHandler {
      * @param summaryText
      * @return
      */
-    public void setNotification(@NonNull String title,
-                                                @NonNull int SmallIcon,
-                                                @NonNull String bigText,
-                                                @NonNull String bigContentTitle,
-                                                @NonNull String summaryText){
+    public void setNotificationWithTextAndBigTextAndBigContentTitleSummaryText(@NonNull String title,
+                                                                               @NonNull int SmallIcon,
+                                                                               @NonNull String bigText,
+                                                                               @NonNull String bigContentTitle,
+                                                                               @NonNull String summaryText){
         Notification builder = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
                 .setContentTitle(title)
                 .setAutoCancel(true)
                 .setGroup(GROUP_KEY)
                 .setGroupSummary(true)
                 .setSmallIcon(SmallIcon)
-                .setPriority(Notification.PRIORITY_DEFAULT)
                 .setContentIntent(getPendingIntent())
+                .setPriority(Notification.PRIORITY_DEFAULT)
                 .setStyle(getNotificationTextStyle(bigText, bigContentTitle, summaryText))
                 .build();
         notify(builder);
@@ -686,14 +685,13 @@ public class NotificationsHandler {
      * @param landingActivityClass
      * @return
      */
-    private PendingIntent getPendingIntent(@NonNull Class landingActivityClass) {
-        Intent intent = new Intent(mContext, landingActivityClass);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK |
-                        Intent.FLAG_ACTIVITY_CLEAR_TASK |
-                        Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+    public PendingIntent getPendingIntent(@NonNull Class landingActivityClass) {
+        Intent activityIntent = new Intent(mContext, landingActivityClass);
+        activityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        activityIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
         return PendingIntent.getActivity(mContext
-                , getNotificationId(), intent
+                , getNotificationId(), activityIntent
                 , PendingIntent.FLAG_CANCEL_CURRENT);
     }
 
@@ -701,11 +699,11 @@ public class NotificationsHandler {
      *  create implicit intent
      * @return
      */
-    private PendingIntent getPendingIntent() {
+    public final static String ACTION_LANDING_ACTIVITY = "android.intent.action.LANDING_ACTIVITY";
+    public PendingIntent getPendingIntent() {
         return PendingIntent.getActivity(
-                  mContext
-                , getNotificationId()
-                , new Intent("android.intent.action.LANDING_ACTIVITY")
+                  mContext, getNotificationId()
+                , new Intent(ACTION_LANDING_ACTIVITY)
                         .addCategory(Intent.CATEGORY_DEFAULT)
                 , PendingIntent.FLAG_CANCEL_CURRENT);
     }
@@ -799,7 +797,7 @@ public class NotificationsHandler {
      * @param landingActivityClass
      * @return
      */
-    private NotificationCompat.Action getAction(
+    public NotificationCompat.Action getAction(
              @NonNull int actionIcon
             ,@NonNull String actionTitle
             ,@NonNull Class landingActivityClass) {
@@ -828,7 +826,7 @@ public class NotificationsHandler {
      * @param resImage
      * @return
      */
-    private Bitmap getBitMapImage(@NonNull int resImage){
+    public Bitmap getBitMapImage(@NonNull int resImage){
         return BitmapFactory.decodeResource(
                 mContext.getResources(),
                 resImage);
@@ -838,7 +836,7 @@ public class NotificationsHandler {
      * Generate Unique Id in each call
      * @return
      */
-    private int getNotificationId() {
+    public int getNotificationId() {
         return  (int) Math.abs(UUID.randomUUID().getMostSignificantBits());
     }
 
@@ -846,7 +844,7 @@ public class NotificationsHandler {
      * Get Notification Display Time For Custom View
      * @return
      */
-    private String getDateTimeAsString() {
+    public String getDateTimeAsString() {
         return DateUtils.formatDateTime(
                   mContext
                 , System.currentTimeMillis()
