@@ -18,6 +18,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private final static String TAG = "MainActivity";
@@ -49,20 +51,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     }
                 });
+        findViewById(R.id.notificationGroup).setOnClickListener(this);
         findViewById(R.id.notificationDefault).setOnClickListener(this);
         findViewById(R.id.notificationCollapsed).setOnClickListener(this);
         findViewById(R.id.notificationExpanded).setOnClickListener(this);
+        findViewById(R.id.notificationInbox).setOnClickListener(this);
 
         notificationsHandler = new NotificationsHandler(this);
 
-//        final NotificationsManager manager = new NotificationsManager(MainActivity.this);
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                manager.sendNotification(messageTitle, messageBody,null);
-//            }
-//        });
+        //final NotificationsManager manager = new NotificationsManager(MainActivity.this);
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "^_^", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -89,17 +93,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.notificationGroup:
+                /*List<City> mCities = DummyData.getDummyData();
+                for (City city: mCities) {
+                    notificationsHandler.showDetailsNotificationWithAllCitiesAction(city);
+                }*/
+                //notificationsHandler.showBundleNotification(mCities.size());
+
+                break;
             case R.id.notificationDefault:
-                notificationsHandler.setNotification(messageTitle, messageBody,
-                         NotificationsHandler.NOTIFICATION_DEFAULT);
+                notificationsHandler.setNotification(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        SplashActivity.class);
                 break;
             case R.id.notificationCollapsed:
-                notificationsHandler.setNotification(messageTitle, messageBody,
-                         NotificationsHandler.NOTIFICATION_COLLAPSED);
+                notificationsHandler.setNotification(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        R.drawable.collapsed_icon);
                 break;
             case R.id.notificationExpanded:
-                notificationsHandler.setNotification(messageTitle, messageBody,
-                         NotificationsHandler.NOTIFICATION_EXPANDED);
+                notificationsHandler.setNotification(
+                        messageTitle,
+                        messageBody,
+                        R.drawable.ic_small_icon,
+                        R.drawable.collapsed_icon,
+                        R.drawable.amsterdam,
+                        SplashActivity.class);
+                break;
+            case R.id.notificationInbox:
+                notificationsHandler.setNotification(
+                        messageTitle,
+                        R.drawable.ic_small_icon,
+                        messageBody);
                 break;
         }
     }

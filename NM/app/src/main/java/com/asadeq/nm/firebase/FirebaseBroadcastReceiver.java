@@ -21,7 +21,7 @@ import static android.content.Context.NOTIFICATION_SERVICE;
 
 public class FirebaseBroadcastReceiver extends BroadcastReceiver {
 
-    private static final String CHANNEL_ID ="CHANNEL_ID" ;
+    private static final String CHANNEL_ID ="APP_CHANNEL_ID" ;
     private Context mContext;
     @Override
     public void onReceive(Context mContext, Intent intent) {

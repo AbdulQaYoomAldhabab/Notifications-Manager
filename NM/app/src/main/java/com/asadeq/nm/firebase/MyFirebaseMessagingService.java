@@ -21,7 +21,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
 
     private static final  String TAG = MyFirebaseMessagingService.class.getSimpleName();
-    private static final String CHANNEL_ID = "CHANNEL_ID";
+    private static final String CHANNEL_ID = "APP_CHANNEL_ID";
 
     @Override
     public void onMessageReceived(RemoteMessage message) {

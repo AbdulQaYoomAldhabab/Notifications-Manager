@@ -1,2 +1,2 @@
-include ':app', ':notification-manager'
+include ':app'
 rootProject.name='NM'

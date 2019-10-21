@@ -76,7 +76,7 @@ public class NotificationsManager {
                     .setContentTitle(messageTitle)
                     .setContentText(messageBody)
                     .setShowWhen(true)
-                    .setChannelId("CHANNEL_ID");
+                    .setChannelId("APP_CHANNEL_ID");
                     //.setFullScreenIntent(getFullScreenIntent(0), false);
                     //.addAction(action);
             // Issue the notification.
@@ -130,7 +130,7 @@ public class NotificationsManager {
             CharSequence name  = "channel_name";//getString(R.string.channel_name);
             String description = "channel_description";//getString(R.string.channel_description);
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel("CHANNEL_ID", name, importance);
+            NotificationChannel channel = new NotificationChannel("APP_CHANNEL_ID", name, importance);
             channel.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
             channel.setDescription(description);
 
@@ -142,7 +142,7 @@ public class NotificationsManager {
             CharSequence name  = "channel_name";//getString(R.string.channel_name);
             String description = "channel_description";//getString(R.string.channel_description);
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel("CHANNEL_ID", name, importance);
+            NotificationChannel channel = new NotificationChannel("APP_CHANNEL_ID", name, importance);
             channel.setDescription(description);
             notificationManager.createNotificationChannel(channel);
         }

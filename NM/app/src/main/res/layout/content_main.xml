@@ -26,6 +26,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:id="@+id/notificationGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Group Notification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="217dp" />
+
+        <Button
             android:id="@+id/notificationDefault"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,6 +55,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Expanded Notification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="217dp" />
+        <Button
+            android:id="@+id/notificationInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inbox Notification"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="217dp" />
