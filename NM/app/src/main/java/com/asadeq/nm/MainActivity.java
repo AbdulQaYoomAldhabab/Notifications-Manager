@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     final String CHANNEL_ID = "MyTestApp";
 
     NotificationsHandler notificationsHandler;
-    private String summaryText = "Notification summaryText \n summaryText summaryText summaryText summaryText summaryText summaryText summaryText";
+    private String summaryText = "Grand Technology";
 
     //Map<String, String> row = "";
     @Override
@@ -106,8 +106,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return super.onOptionsItemSelected(item);
     }
 
+    public static int notificationCount = 0;
     @Override
     public void onClick(View v) {
+        notificationCount = notificationCount+1;
         switch (v.getId()){
             case R.id.notificationGroup:
                 /*List<City> mCities = DummyData.getDummyData();
@@ -275,5 +277,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 );
                 break;
         }
+        //notificationsHandler.showBundleNotification(notificationCount);
+        notificationCount = 0;
     }
 }

@@ -51,7 +51,7 @@
                 android:id="@+id/NotificationWithLandingClass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithLandingClass"
+                android:text="Notification LandingClass"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -59,7 +59,7 @@
                 android:id="@+id/NotificationWithLargeIcon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithLargeIcon"
+                android:text="Notification LargeIcon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -67,7 +67,7 @@
                 android:id="@+id/NotificationWithAction"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithAction"
+                android:text="Notification Action"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -75,7 +75,7 @@
                 android:id="@+id/NotificationWithLargeIconAndAction"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="setNotificationWithLargeIconAndAction"
+                android:text="setNotification LargeIcon Action"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -83,7 +83,7 @@
                 android:id="@+id/NotificationWithBodyTextAndActionAndLandingActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithBodyTextAndActionAndLandingActivity"
+                android:text="Notification BodyText Action LandingActivity"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -91,7 +91,7 @@
                 android:id="@+id/NotificationWithLargeIconAndActionAndLandingActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithLargeIconAndActionAndLandingActivity"
+                android:text="Notification LargeIcon Action LandingActivity"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -99,7 +99,7 @@
                 android:id="@+id/NotificationWithBigPicture"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithBogPicture"
+                android:text="Notification BogPicture"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -107,7 +107,7 @@
                 android:id="@+id/NotificationWithBigPictureAndActionAndLanding"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithBigPictureAndActionAndLanding"
+                android:text="Notification BigPicture Action Landing"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -115,7 +115,7 @@
                 android:id="@+id/NotificationWithBigPictureAndLandingActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithBigPictureAndLandingActivity"
+                android:text="Notification BigPicture LandingActivity"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -123,7 +123,7 @@
                 android:id="@+id/NotificationWithBigText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithBigText"
+                android:text="Notification BigText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -131,7 +131,7 @@
                 android:id="@+id/NotificationWithBigTextAndLargeIcon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithBigTextAndLargeIcon"
+                android:text="Notification BigText LargeIcon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -139,7 +139,7 @@
                 android:id="@+id/NotificationWithBigTextAndLargeIconAndLandingActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithBigTextAndLargeIconAndLandingActivity"
+                android:text="Notification BigText LargeIcon LandingActivity"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -147,7 +147,7 @@
                 android:id="@+id/NotificationInboxWithMessage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationInboxWithMessage"
+                android:text="NotificationInbox Message"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -155,7 +155,7 @@
                 android:id="@+id/NotificationInboxWithMessageAndBigContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationInboxWithMessageAndBigContent"
+                android:text="NotificationInbox Message BigContent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -163,7 +163,7 @@
                 android:id="@+id/NotificationInboxWithMessageAndBigContentAndSummaryText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationInboxWithMessageAndBigContentAndSummaryText"
+                android:text="NotificationInbox Message BigContent SummaryText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -171,7 +171,7 @@
                 android:id="@+id/NotificationWithTextAndBigText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithTextAndBigText"
+                android:text="Notification Text BigText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -179,7 +179,7 @@
                 android:id="@+id/NotificationWithTextAndBigTextAndBigContentTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithTextAndBigTextAndBigContentTitle"
+                android:text="Notification Text BigText BigContentTitle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />
@@ -187,7 +187,7 @@
                 android:id="@+id/NotificationWithTextAndBigTextAndBigContentTitleSummaryText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NotificationWithTextAndBigTextAndBigContentTitleSummaryText"
+                android:text="Notification Text BigText BigContentTitle SummaryText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="217dp" />

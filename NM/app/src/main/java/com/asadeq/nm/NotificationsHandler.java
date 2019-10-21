@@ -91,57 +91,16 @@ public class NotificationsHandler {
         channel.setDescription(channelDescription);
         return channel;
     }
-
-
-    // create group  notification
-//    public void showDetailsNotificationWithAllCitiesAction(final @NonNull City city) {
-//        final Intent allCitiesIntent = new Intent(mContext, MainActivity.class);
-//        final int notificationId = (int) (BASE_NOTIFICATION_ID + city.getId());
-//
-//        allCitiesIntent.putExtra(EXTRA_NOTIFICATION_ID, notificationId);
-//
-//        final PendingIntent allCitiesPendingIntent = PendingIntent.getActivity(
-//                mContext,
-//                notificationId,
-//                allCitiesIntent,
-//                PendingIntent.FLAG_UPDATE_CURRENT);
-//
-//        final Intent detailCityIntent = new Intent(mContext, MainActivity.class);
-//        detailCityIntent.putExtra("CITY_ID", city.getId());
-//
-//        PendingIntent detailPendingIntent = PendingIntent.getActivity(
-//                mContext,
-//                notificationId,
-//                detailCityIntent,
-//                PendingIntent.FLAG_UPDATE_CURRENT);
-//
-//        final NotificationCompat.Action allCitiesAction = new NotificationCompat.Action(
-//                R.drawable.ic_small_icon,
-//                "notification_action_all_cities",
-//                allCitiesPendingIntent);
-//
-//        final Notification notification = createCustomNotification(
-//                allCitiesAction,
-//                city.getDescription(),
-//                detailPendingIntent);
-//
-//        getNotificationManager().notify(notificationId, notification);
-//    }
-//    private Notification createCustomNotification(final NotificationCompat.Action action,
-//                                                  final String message,
-//                                                  final PendingIntent contentIntent) {
-//        Notification builder = new NotificationCompat.Builder(mContext, GROUP_CHANNEL_ID)
-//                .setSmallIcon(R.drawable.ic_small_icon)
-//                .setContentTitle("notification_title")
-//                .setContentText(message)
-//                .setAutoCancel(true)
-//                .setContentIntent(contentIntent)
-//                .addAction(action)
-//                .setGroup(GROUP_KEY)
-//                .build();
-//
-//        return builder;
-//    }
+    public void showBundleNotification(final int notificationCount) {
+        final Notification summaryNotification = new NotificationCompat.Builder(mContext, APP_CHANNEL_ID)
+                .setContentText(notificationCount + "_GROUP_NOTIFICATIONS")
+                .setSmallIcon(R.drawable.ic_small_icon)
+                .setStyle(new NotificationCompat.InboxStyle())
+                .setGroup(GROUP_KEY)
+                .setGroupSummary(true)
+                .build();
+        notify(summaryNotification/*, (int) BASE_NOTIFICATION_ID*/);
+    }
 
    /* public void setNotification(@NonNull String title, @NonNull String bodyText, @NonNull int smallIcon){
         notify(getNotificationBuilder(title, bodyText, smallIcon));
